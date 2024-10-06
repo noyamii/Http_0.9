@@ -87,7 +87,7 @@ func client() {
 		log.Fatalf("err: %s", err)
 	}
 
-	if _, err := conn.Write([]byte("GET /this/is/a/test\r\n")); err != nil {
+	if _, err := conn.Write([]byte("GET /\r\n")); err != nil {
 		log.Fatalf("err: %s", err)
 	}
 
